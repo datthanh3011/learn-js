@@ -1,0 +1,23 @@
+<html>
+    <head>
+            <meta charset="UTF-8">
+    </head>
+    <body>
+       
+        <script language = "JavaScript">
+            var soluong = prompt("Nhập số lượng thành viên danh sách ",'');
+            var danhsach = new Array();
+            var stt = 1;
+            for (let i = 0; i < soluong; i++) {
+                stt+=i;
+                danhsach[i] = prompt("Nhập tên người thứ " + stt, '');             
+            }
+            for (let i = 0; i < danhsach.length; i++) {
+                var element = danhsach[i];
+                document.write(element);
+                document.write("<BR>");
+                console.log(danhsach[i])  ;             
+            }
+        </script>
+    </body>
+</html>
